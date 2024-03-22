@@ -1,0 +1,20 @@
+smtp:
+  server: smtp.example.com
+  port: 587
+  ssl: true
+  username: your_smtp_username
+  password: your_smtp_password
+
+pop3:
+  server: pop.example.com
+  port: 995
+  ssl: true
+  username: your_pop3_username
+  password: your_pop3_password
+
+email:
+  subject: "Monitoring Email Cycle {{cyclekey}}"
+
+cycle_time: 5 # Frequency in minutes
+
+otel_backend: "http://otel-collector:55678" # OpenTelemetry backend endpoint
